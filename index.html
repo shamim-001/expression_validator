@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expression Validator</title>
+  </head>
+  <body>
+    <main class="py-2 flex flex-col items-center justify-center">
+      <h1 class="text-3xl font-extrabold mb-5">Expression Validator</h1>
+
+      <div
+        class="text-xl flex flex-col items-center justify-center bg-slate-100 p-5"
+      >
+        <label class="text-xl font-bold" for="validationOptions"
+          >Select a validation option:</label
+        >
+        <select
+          class="outline-none border border-slate-400 rounded-sm mt-2"
+          id="validationOptions"
+        >
+          <option value="Email">Email</option>
+          <option value="Phone Number">Phone Number</option>
+          <option value="Post Code">Post Code</option>
+        </select>
+        <br />
+        <label for="userInput">Enter the input to validate:</label>
+        <input
+          class="outline-none border border-slate-400 rounded-xl p-2 mt-2"
+          type="text"
+          id="userInput"
+          placeholder="ex. example@gmail.com"
+        />
+        <br />
+        <button
+          class="outline-none border border-slate-400 rounded-xl px-3 py-2 hover:bg-slate-200"
+          id="submitBtn"
+        >
+          Validate
+        </button>
+        <div class="mt-3">
+          <p id="valid" class="bg-green-600 p-2 hidden text-white rounded-md">
+            Valid
+          </p>
+          <p id="invalid" class="bg-red-600 p-2 hidden text-white rounded-md">
+            Invalid
+          </p>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
