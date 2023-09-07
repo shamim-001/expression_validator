@@ -28,12 +28,12 @@ To run this project locally, follow these steps:
 1. Clone the repository from GitHub:
 
    ```bash
-   git clone
+   git clone git@github.com:shamim-001/expression_validator.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd
+   cd expression_validator
    ```
 3. Install project dependencies:
 
@@ -49,4 +49,4 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-This project is deployed on Vercel. You can access the live demo <a href="" target="_blank">here</a>.
+This project is deployed on Vercel. You can access the live demo <a href="https://expression-validator.vercel.app/" target="_blank">here</a>.
